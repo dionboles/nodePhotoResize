@@ -6,7 +6,7 @@ const path = require("path");
     data.forEach(element => {
         if (path.extname(element) == '.jpg'){
             console.log(path.resolve(element));
-            Jimp.read( __dirname+"/src/img/"+element).then(tmp => tmp.resize(1920,795).quality(60).write(path.basename(element)+"_small.jpg")).catch(err =>{
+            Jimp.read( __dirname+"/src/img/"+element).then(tmp => tmp.resize(1920,795).quality(60).write("build/img/"+path.basename(element))).catch(err =>{
                 console.error(err);
             })
         }
