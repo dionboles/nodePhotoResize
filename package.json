@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "compress-images": "^1.4.6",
+    "compress-images": "^1.5.8",
     "jimp": "^0.6.4",
     "ssl-rsa-strength": "^1.0.0"
   }
