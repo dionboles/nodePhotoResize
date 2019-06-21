@@ -26,6 +26,9 @@ if (fs.existsSync(srcDir)){
                 Jimp.read( __dirname+"/src/img/"+element).then(tmp => tmp.resize(1920,795).quality(60).writeAsync("build/img/"+path.basename(element))).catch(err =>{
                     console.error(err);
                 })
+                Jimp.read( __dirname+"/src/img/"+element).then(tmp => tmp.resize(350,200).quality(50).writeAsync("build/img/"+"small_"+path.basename(element))).catch(err =>{
+                    console.error(err);
+                })
             }
         });
         if (err){
