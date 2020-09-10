@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "compress-images": "^1.5.8",
-    "jimp": "^0.6.4",
+    "jimp": "^0.16.0",
     "ssl-rsa-strength": "^1.0.0"
   }
 }
